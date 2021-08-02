@@ -1,0 +1,32 @@
+@import "../../../app.component.scss";
+
+.features {
+  background: rgb(249,249,252);
+  .container {
+    .features_header {
+      font-size: 70px;
+      font-weight: 500;
+      color: $font-dark-blue;
+      margin-bottom: 57px;
+    }
+    .features_cards {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 30px;
+      .features_card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 4px 3px 17px 4px rgba(34, 60, 80, 0.2);
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        color: $font-grape;
+        line-height: 150%;
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

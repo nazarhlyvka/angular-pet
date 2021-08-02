@@ -1,0 +1,38 @@
+@import '../../app.component.scss';
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .item-row {
+    cursor: pointer;
+    &:hover {
+      background-color: $back-gr-purple;
+      color: $font-white;
+    }
+  }
+}
+
+.scroll-icon {
+  margin: 10px;
+  padding-bottom: 600px ;
+}
+
+.search-filter {
+  border: none;
+  border-bottom: 3px solid $back-gr-purple;
+  transition: 0.3s;
+  &:focus {
+    padding: 5px;
+    outline: none;
+  }
+}

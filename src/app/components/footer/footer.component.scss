@@ -1,0 +1,30 @@
+@import '../../app.component.scss';
+
+footer {
+  background-color: $back-gr-purple;
+  padding: 15px 0;
+  div {
+    .footer {
+      color: $font-white;
+      display: flex;
+      justify-content: space-between;
+      .copyright {
+        font-weight: 200;
+      }
+      .list-social {
+        list-style: none;
+        display: flex;
+        li {
+          margin-left: 30px;
+          cursor: pointer;
+          i{
+            transition: 0.3s;
+            &:hover {
+              color: $sea-green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

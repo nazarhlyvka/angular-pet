@@ -1,0 +1,69 @@
+{
+  "HEADER": {
+    "NAVBAR": {
+      "ADVANTAGES": "Advantages",
+      "FEATURES": "Features",
+      "SIGN_IN": "Sign in"
+    }
+  },
+  "HOME_PAGE": {
+    "HEADER": "Home Page"
+  },
+  "PAGE_DEVELOPMENT": "Page under development",
+  "FEATURES_PAGE": {
+    "SEARCH": "Search",
+    "HEADER": "Users list",
+    "USER_DETAIL": "User Detail",
+    "TABLE": {
+      "ID": "ID",
+      "NAME": "Name",
+      "USER_NAME": "User name",
+      "CITY": "City",
+      "EMAIL": "Email",
+      "PHONE": "Phone"
+    }
+  },
+  "NON_EXISTENS_PAGE": "Non-existent",
+  "FOOTER": {
+    "COPYRIGHT": "Project name",
+    "POLICY": "Privacy policy"
+  },
+  "PROMO": {
+    "HEADER": "UTM builder of enterprise level",
+    "PARAGRAPH": "WooCommerce is a customizable, open-source eCommerce platform built on WordPress. Get started quickly and make your way.",
+    "BUTTON": "Get your 1st menth FREE acees!"
+  },
+  "ABOUT": {
+    "SEC_FIRST": {
+      "HEADER": "About",
+      "DESCR": "UTM parameters help funnel-based analytical systems such as Google Analytics to know where your visitors are coming from. In the following form you can generate UTM links for your campaign.",
+      "BTN" : "Generate UTM"
+    },
+    "SEC_SECND": {
+      "DESC_F": "This tool allows you to easily add campaign parameters to URLs so you can track Custom Campaigns in Google Analytics. You can also add more fields.",
+      "HEADER": "Enter the website URL and campaign information.",
+      "DESC_S": "Foll out the requered fields (marked with *) in the form below, and once complete the full campaign URL will be generated for you. <br> Note: the generated URL is automatically updated as you make changes.",
+      "FORM": {
+        "FIELD_ONE": {
+          "NAME": "Website URL",
+          "PLACEHOLDER": "The website URL (e.g. www.example.com)"
+        },
+        "FIELD_TWO": {
+          "NAME": "Campaign Source",
+          "PLACEHOLDER": "The referrer: (e.g. google, facebook)"
+        },
+        "FIELD_THREE": {
+          "NAME": "Campaign Medium",
+          "PLACEHOLDER": "Marketing medium (e.g. cpc, baner, email)"
+        },
+        "FIELD_FOUR": {
+          "NAME": "Campaign Name",
+          "PLACEHOLDER": "Product, promo code or slogan (e.g. spring_sale)"
+        }
+      },
+      "BTN": "CLEAR FIELDS",
+      "ALERT": "Fill out the required fields above and a URL will be automatically generated for you here."
+    }
+  }
+
+}

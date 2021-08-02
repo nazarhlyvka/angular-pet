@@ -1,0 +1,53 @@
+@import '../../app.component.scss';
+
+.header {
+  background: $back-gr-purple;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    .nav-logo {
+      a {
+        text-decoration: none;
+        text-shadow: 2px 4px rgba(78, 77, 77, 0.5);
+        .logo-right {
+          color: $font-white;
+        }
+        .logo-left {
+          color: $sea-green;
+        }
+      }
+    }
+    .nav-lang {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .lang {
+        color: $font-white;
+        border: none;
+        background: $back-gr-purple;
+        &:focus {
+          outline: none;
+        }
+      }
+      .nav-menu-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu-item {
+          margin: 0 25px;
+          .active {
+            border-bottom: 1px solid $font-white;
+          }
+          a {
+            text-decoration: none;
+            color: $font-white
+          }
+        }
+      }
+    }
+  }
+}
+

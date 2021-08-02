@@ -1,0 +1,31 @@
+@import '../../../app.component.scss';
+
+section {
+  .whywe_header {
+    font-size: 70px;
+    font-weight: 500;
+    color: $font-dark-blue;
+    margin-bottom: 57px;
+  }
+  .whywe_cards {
+    display: flex;
+    justify-content: space-between;
+    .whywe_card {
+      flex-basis: 30%;
+      text-align: center;
+      color: $font-grape;
+      img {
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+}

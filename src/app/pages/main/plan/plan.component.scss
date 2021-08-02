@@ -1,0 +1,44 @@
+@import '../../../app.component.scss';
+
+section {
+  padding-bottom: 70px;
+  .plan_wr {
+    width: 60%;
+    margin: 0 auto;
+    .plan_header {
+      font-size: 70px;
+      font-weight: 500;
+      color: $font-dark-blue;
+      margin-bottom: 32px;
+    }
+    .plan_card {
+      border-radius: 10px;
+      padding: 45px;
+      box-shadow: 4px 4px 8px 6px rgba(34, 60, 80, 0.2);
+      display: flex;
+      justify-content: space-between;
+      .plan_descr {
+        flex-basis: 40%;
+        color: $font-grape;
+        h4 {
+          font-weight: 500;
+          font-size: 48px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 24px;
+          line-height: 150%;
+        }
+      }
+      .plan_price {
+        h4 {
+          color: $font-dark-blue;
+          font-weight: 500;
+          font-size: 70px;
+          line-height: 95px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

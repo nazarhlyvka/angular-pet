@@ -1,0 +1,32 @@
+@import '../../../app.component.scss';
+
+.promo {
+  padding-top: 66px;
+  background-color: $back-gr-purple;
+  color: $font-white;
+  position: relative;
+  .container {
+    h1 {
+      font-size: 70px;
+      font-weight: 500;
+    }
+    p {
+      width: 60%;
+      margin: 0 auto 30px;
+      line-height: 150%;
+      font-size: 18px;
+    }
+    div {
+      text-align: center;
+      padding-bottom: 100px;
+    }
+  }
+  .helper-box {
+    background: white none repeat scroll 0 0;
+    border-radius: 70%;
+    bottom: -40px;
+    height: 5em;
+    position: absolute;
+    width: 100%;
+  }
+}

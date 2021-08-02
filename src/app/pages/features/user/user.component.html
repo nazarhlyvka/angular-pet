@@ -1,0 +1,24 @@
+<div class="container center" *ngIf='user?.name && !isLoading'>
+  <h3 class="mb10px mt10px">{{'FEATURES_PAGE.USER_DETAIL'| translate}}</h3>
+  <table class="mb30px">
+    <tr>
+      <th>{{'FEATURES_PAGE.TABLE.ID'| translate}}</th>
+      <th>{{'FEATURES_PAGE.TABLE.NAME'| translate}}</th>
+      <th>{{'FEATURES_PAGE.TABLE.USER_NAME'| translate}}</th>
+      <th>{{'FEATURES_PAGE.TABLE.CITY'| translate}}</th>
+      <th>{{'FEATURES_PAGE.TABLE.EMAIL'| translate}}</th>
+      <th>{{'FEATURES_PAGE.TABLE.PHONE'| translate}}</th>
+    </tr>
+    <tr>
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.city}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+    </tr>
+  </table>
+</div>
+<div class="center">
+  <app-spinner *ngIf='isLoading'></app-spinner>
+</div>

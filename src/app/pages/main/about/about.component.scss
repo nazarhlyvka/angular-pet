@@ -1,0 +1,117 @@
+@import "../../../app.component.scss";
+
+section {
+  position: relative;
+  .container {
+    .about_form_wr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .about_wr {
+        flex-basis: 40%;
+        color: $font-dark-blue;
+        .about_header {
+          font-size: 70px;
+          font-weight: 500;
+          color: $font-dark-blue;
+        }
+        .about_desc {
+          font-size: 18px;
+          line-height: 150%;
+        }
+      }
+      .form_wr {
+        border-radius: 5px;
+        position: relative;
+        z-index: 10;
+        flex-basis: 50%;
+        padding: 10px;
+        box-shadow: 5px 3px 18px 8px rgba(34, 60, 80, 0.2);
+        max-width: 600px;
+        .form_p {
+          font-size: 10px;
+          color: $font-gray;
+          line-height: 150%;
+        }
+        .form_header {
+          font-weight: 400;
+          font-size: 15px;
+        }
+        .form {
+          div {
+            display: flex;
+            margin-bottom: 20px;
+            label {
+              color: $font-gray;
+              font-size: 12px;
+              flex-basis: 35%;
+            }
+            input {
+              color: $font-gray;
+              font-size: 12px;
+              font-weight: 500;
+              width: 100%;
+              max-width: 500px;
+              border: none;
+              border-bottom: 1px solid $font-gray;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .form_btn {
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 1px 5px 7px 0px rgba(34, 60, 80, 0.2);
+          }
+        }
+        .alert-mess {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+          p {
+            font-size: 11px;
+            color: $font-gray;
+          }
+          i {
+            margin-right: 10px;
+            color: rgb(250, 192, 45);
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .about_descr {
+      width: 80%;
+      margin: 0 auto 100px;
+      color: $font-dark-blue;
+      font-size: 18px;
+      line-height: 150%;
+    }
+    .about_icons {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      div {
+        flex-basis: 30%;
+        text-align: center;
+        color: $font-grape;
+      }
+    }
+  }
+  .about-radius {
+    background: white none repeat scroll 0 0;
+    border-radius: 70%;
+    bottom: -40px;
+    height: 5em;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+  }
+}

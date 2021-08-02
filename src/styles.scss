@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/app.component.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt10px {
+  margin-top: 10px;
+}
+
+.mt30px {
+  margin-top: 30px;
+}
+
+.mb10px {
+  margin-bottom: 10px;
+}
+.mb20px {
+  margin-bottom: 20px;
+}
+.mb30px {
+  margin-bottom: 30px;
+}
+.mb100px {
+  margin-bottom: 100px;
+}
+
+.pb100px {
+  padding-bottom: 100px;
+}
+
+.pb30px {
+  padding-bottom: 30px;
+}
+
+.p100px {
+  padding: 100px 0 ;
+}
+
+.btn {
+  color: $font-white;
+  background-color: $sea-green;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  position: sticky;
+  top: 100%;
+}
