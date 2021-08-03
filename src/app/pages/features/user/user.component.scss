@@ -1,3 +1,5 @@
+@import '../../../app.component.scss';
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -12,4 +14,20 @@ td, th {
 
 tr:nth-child(odd) {
   background-color: #dddddd;
+}
+
+.btn_back {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 15px ;
+  border: none;
+  border-radius: 10px;
+  background: $back-gr-purple;
+  color: $font-white;
+  cursor: pointer;  
+  font-size: 16px;
+  transition: .3s;
+  &:hover {
+    background: rgb(148, 119, 255);
+  }
 }

@@ -1,5 +1,6 @@
 <div class="container center" *ngIf='user?.name && !isLoading'>
   <h3 class="mb10px mt10px">{{'FEATURES_PAGE.USER_DETAIL'| translate}}</h3>
+    <button class="btn_back mb10px" (click)='onBackToPreviousPage()'>Back</button>
   <table class="mb30px">
     <tr>
       <th>{{'FEATURES_PAGE.TABLE.ID'| translate}}</th>
