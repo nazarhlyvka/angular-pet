@@ -8,15 +8,10 @@ import {I18nService} from '../../services/i18n.service'
   styleUrls: ['./header.component.scss']
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   lang = localStorage.getItem('lang') || 'en'
 
   constructor(public translate: TranslateService, private i18nService: I18nService) { }
-
-  ngOnInit() {
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-  }
 
   changeLocale(locale: string) {
     localStorage.setItem('lang', locale)

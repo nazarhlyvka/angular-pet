@@ -1,47 +1,49 @@
 <router-outlet></router-outlet>
-<div class="container mb30px" *ngIf='!isloading && !error'>
-  <h2 class="center mb10px mt10px">{{'FEATURES_PAGE.HEADER' | translate}}</h2>
-  <input 
-    type="text" 
-    [(ngModel)]='namesFilter' 
-    class="mb10px search-filter" 
-    [placeholder]="'FEATURES_PAGE.SEARCH'| translate">
-  <table>
-    <tr>
-      <th>{{'FEATURES_PAGE.TABLE.ID'| translate}}</th>
-      <th>{{'FEATURES_PAGE.TABLE.NAME'| translate}}</th>
-      <th>{{'FEATURES_PAGE.TABLE.USER_NAME'| translate}}</th>
-    </tr>
-    <tr *ngFor='let user of users | Namesfilter: namesFilter' class="item-row" [routerLink]="['/features', user.id]">
-      <td>{{user.id}}</td>
-      <td>{{user.name}}</td>
-      <td>{{user.username}}</td>
-    </tr>
-  </table>
-</div>
-
-<div
-  class="search-results"
-  infiniteScroll
-  [infiniteScrollDistance]="2"
-  [infiniteScrollThrottle]="250"
-  (scrolled)="onScroll()">
-</div>
-
-<div *ngIf='isloading' class="center">
-  <app-spinner></app-spinner>
-</div>
-
-<div *ngIf='secSpinner' class="center">
-  <app-spinner></app-spinner>
-</div>
-
-<div class="center" *ngIf='error'>
-  <h3>Error</h3>
-  <p>Something went wrong :(</p>
-</div>
-
-<div *ngIf='scrollIcon && !isloading' class="scroll-icon">
-  <app-scroll-icon></app-scroll-icon>
-</div>
+<main>
+  <div class="container mb30px" *ngIf='!isloading && !error'>
+    <h2 class="center mb10px mt10px">{{'FEATURES_PAGE.HEADER' | translate}}</h2>
+    <input 
+      type="text" 
+      [(ngModel)]='namesFilter' 
+      class="mb10px search-filter" 
+      [placeholder]="'FEATURES_PAGE.SEARCH'| translate">
+    <table>
+      <tr>
+        <th>{{'FEATURES_PAGE.TABLE.ID'| translate}}</th>
+        <th>{{'FEATURES_PAGE.TABLE.NAME'| translate}}</th>
+        <th>{{'FEATURES_PAGE.TABLE.USER_NAME'| translate}}</th>
+      </tr>
+      <tr *ngFor='let user of users | Namesfilter: namesFilter' class="item-row" [routerLink]="['/features', user.id]">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div
+    class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="250"
+    (scrolled)="onScroll()">
+  </div>
+  
+  <div *ngIf='isloading' class="center">
+    <app-spinner></app-spinner>
+  </div>
+  
+  <div *ngIf='secSpinner' class="center">
+    <app-spinner></app-spinner>
+  </div>
+  
+  <div class="center" *ngIf='error'>
+    <h3>Error</h3>
+    <p>Something went wrong :(</p>
+  </div>
+  
+  <div *ngIf='scrollIcon && !isloading' class="scroll-icon">
+    <app-scroll-icon></app-scroll-icon>
+  </div>
+</main>
 
